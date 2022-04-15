@@ -1,0 +1,26 @@
+PODS:
+  - ErrorView (1.0.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - SwiftSpinner (2.2.0)
+
+DEPENDENCIES:
+  - ErrorView
+  - SDWebImage (~> 5.0)
+  - SwiftSpinner
+
+SPEC REPOS:
+  trunk:
+    - ErrorView
+    - SDWebImage
+    - SwiftSpinner
+
+SPEC CHECKSUMS:
+  ErrorView: f63a640e630a6a631246c49a783294f5707dc4f7
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SwiftSpinner: f9b59477fe107427f2b5b835497d6636fa167ede
+
+PODFILE CHECKSUM: 1b430f1f6049e54244519f399b94a76072506b4a
+
+COCOAPODS: 1.10.1

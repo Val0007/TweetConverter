@@ -1,0 +1,6 @@
+framework module ErrorView {
+  umbrella header "ErrorView-umbrella.h"
+
+  export *
+  module * { export * }
+}
