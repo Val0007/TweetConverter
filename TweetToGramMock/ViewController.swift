@@ -34,7 +34,7 @@ class ViewController: UIViewController {
      var chosenTextEditableOption:TextEditableOptions? = .font
     var chosenShapeEditableOption:ShapeEditableOptions?
     
-    lazy var txtEditableOptions:[String:[String:()->()]] = ["Font":["Roboto":changeFont,"Smooch Sans":changeFont,"SFUI-Regular":changeFont,"Montserrat":changeFont]]
+    lazy var txtEditableOptions:[String:[String:()->()]] = ["Font":["Roboto":changeFont,"Smooch Sans":changeFont,"SFUI-Regular":changeFont,"Montserrat":changeFont,"Raleway":changeFont,"Nunito":changeFont,"Open Sans":changeFont,"Source Sans Pro":changeFont]]
     var dataForEditingItem = [String:Any]()
 
 
@@ -409,6 +409,8 @@ class ViewController: UIViewController {
             lbl.removeBorder()
         }
         
+        board.selectedItem = nil
+        
         bringHomeButtons()
         
         doneButton.setTitle("", for: .normal)
@@ -429,11 +431,19 @@ extension ViewController:BoardDelegate{
             if (label.font.fontName) == ".SFUI-Regular"{
                 chosenFont = .none
             }
+            else{
+                fontNamesForCurrentFont = []
+                for fontName in UIFont.fontNames(forFamilyName: label.font.familyName){
+                    print("Family: \(label.font.familyName)     Font: \(fontName)")
+                    fontNamesForCurrentFont.append(fontName)
+                    }
+            }
             collectionView.reloadData()
             label.addBorder()
             label.bringSubviewToFront(self.view)
             selectedItem = label
             doneButton.setTitle("Done", for: .normal)
+            print("FIRST FUNC")
             bringEditStack()
             
         case .shape(let shape):
@@ -446,6 +456,40 @@ extension ViewController:BoardDelegate{
             
         }
 
+    }
+    
+    
+    func tapFromAnotherView(view: TouchedView) {
+        switch view {
+        case .label(let label):
+            editOption = .text
+            if (label.font.fontName) == ".SFUI-Regular"{
+                chosenFont = .none
+            }
+            else{
+                fontNamesForCurrentFont = []
+                for fontName in UIFont.fontNames(forFamilyName: label.font.familyName){
+                    print("Family: \(label.font.familyName)     Font: \(fontName)")
+                    fontNamesForCurrentFont.append(fontName)
+                    }
+            }
+            print("SECOND FUNC")
+            collectionView.reloadData()
+            label.addBorder()
+            label.bringSubviewToFront(self.view)
+            selectedItem = label
+            doneButton.setTitle("Done", for: .normal)
+            self.view.bringSubviewToFront(self.topCollectionView)
+            bringDownTopCollectionView()
+        case .shape(let shape):
+            shape.addBorder()
+            editOption = .shape
+            selectedItem = shape
+            doneButton.setTitle("Done", for: .normal)
+            collectionView.reloadData()
+            self.view.bringSubviewToFront(self.topCollectionView)
+            bringDownTopCollectionView()
+        }
     }
     
     
@@ -817,6 +861,17 @@ extension ViewController{
 
             }
         }
+        
+
+    }
+    
+    private func bringDownTopCollectionView(){
+        UIView.animate(withDuration: 0.3) {
+            if(self.topCollectionView.frame.origin.y < self.view.frame.height){
+                self.topCollectionView.frame.origin.y =  self.view.frame.height + self.view.frame.height * 0.06
+            }
+        }
+
 
     }
     

@@ -45,7 +45,6 @@
 		B376DFA72809B2F60096CE93 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DF9D2809B2F50096CE93 /* SourceSansPro-Bold.ttf */; };
 		B376DFA82809B2F60096CE93 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DF9E2809B2F50096CE93 /* SourceSansPro-Regular.ttf */; };
 		B376DFA92809B2F60096CE93 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DF9F2809B2F50096CE93 /* SourceSansPro-Black.ttf */; };
-		B376DFAA2809B2F60096CE93 /* SourceSansPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFA02809B2F50096CE93 /* SourceSansPro-SemiBoldItalic.ttf */; };
 		B376DFAB2809B2F60096CE93 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFA12809B2F50096CE93 /* SourceSansPro-Light.ttf */; };
 		B376DFAD2809B2F60096CE93 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFA32809B2F60096CE93 /* SourceSansPro-SemiBold.ttf */; };
 		B376DFAF2809B2F60096CE93 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFA52809B2F60096CE93 /* SourceSansPro-ExtraLight.ttf */; };
@@ -58,6 +57,7 @@
 		B376DFC02809B32B0096CE93 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFB72809B32A0096CE93 /* Raleway-Medium.ttf */; };
 		B376DFC12809B32B0096CE93 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFB82809B32A0096CE93 /* Raleway-Black.ttf */; };
 		B376DFC22809B32B0096CE93 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B376DFB92809B32A0096CE93 /* Raleway-SemiBold.ttf */; };
+		B3872DCC280BC9FB00ABD342 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3872DCB280BC9FB00ABD342 /* Secrets.swift */; };
 		B3981C1827D70CF000BDE015 /* sliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3981C1727D70CF000BDE015 /* sliderCell.swift */; };
 		B39DB3432807EBED0067F586 /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DB3422807EBED0067F586 /* TweetModel.swift */; };
 		B39DB3452807F75C0067F586 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DB3442807F75C0067F586 /* DataStore.swift */; };
@@ -119,7 +119,6 @@
 		B376DF9D2809B2F50096CE93 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
 		B376DF9E2809B2F50096CE93 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		B376DF9F2809B2F50096CE93 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
-		B376DFA02809B2F50096CE93 /* SourceSansPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		B376DFA12809B2F50096CE93 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
 		B376DFA32809B2F60096CE93 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		B376DFA52809B2F60096CE93 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		B376DFB72809B32A0096CE93 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		B376DFB82809B32A0096CE93 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
 		B376DFB92809B32A0096CE93 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		B3872DCB280BC9FB00ABD342 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		B3981C1727D70CF000BDE015 /* sliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderCell.swift; sourceTree = "<group>"; };
 		B39DB3422807EBED0067F586 /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
 		B39DB3442807F75C0067F586 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -242,6 +242,7 @@
 				B3981C1727D70CF000BDE015 /* sliderCell.swift */,
 				B33CFDF828071BE300FC377D /* TweetViewController.swift */,
 				B39DB3422807EBED0067F586 /* TweetModel.swift */,
+				B3872DCB280BC9FB00ABD342 /* Secrets.swift */,
 			);
 			path = TweetToGramMock;
 			sourceTree = "<group>";
@@ -300,7 +301,6 @@
 				B376DFA12809B2F50096CE93 /* SourceSansPro-Light.ttf */,
 				B376DF9E2809B2F50096CE93 /* SourceSansPro-Regular.ttf */,
 				B376DFA32809B2F60096CE93 /* SourceSansPro-SemiBold.ttf */,
-				B376DFA02809B2F50096CE93 /* SourceSansPro-SemiBoldItalic.ttf */,
 			);
 			path = opensanspro;
 			sourceTree = "<group>";
@@ -437,7 +437,6 @@
 				B376DF892809B2820096CE93 /* Nunito-ExtraLight.ttf in Resources */,
 				B3F3F515280565FF001712D6 /* SmoochSans-Thin.ttf in Resources */,
 				B376DF952809B2C40096CE93 /* OpenSans-Light.ttf in Resources */,
-				B376DFAA2809B2F60096CE93 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
 				B36C032427C35166008B6879 /* Assets.xcassets in Resources */,
 				B376DFBF2809B32B0096CE93 /* Raleway-Bold.ttf in Resources */,
 				B376DFAF2809B2F60096CE93 /* SourceSansPro-ExtraLight.ttf in Resources */,
@@ -509,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31D933627C9019900A36FE2 /* ExtensionsUI.swift in Sources */,
+				B3872DCC280BC9FB00ABD342 /* Secrets.swift in Sources */,
 				B36C031F27C35165008B6879 /* ViewController.swift in Sources */,
 				B36C031B27C35165008B6879 /* AppDelegate.swift in Sources */,
 				B3A1604927D62E85006489C6 /* bottomCell.swift in Sources */,
@@ -664,7 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K2FVB4668G;
 				INFOPLIST_FILE = TweetToGramMock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,7 +685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K2FVB4668G;
 				INFOPLIST_FILE = TweetToGramMock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

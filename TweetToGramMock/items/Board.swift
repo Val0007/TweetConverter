@@ -11,6 +11,7 @@ import UIKit
 
 protocol BoardDelegate {
     func txtTap(label:TouchedView)
+    func tapFromAnotherView(view:TouchedView)
 }
 
 enum AddType{
@@ -182,6 +183,18 @@ class Board: UIView {
             if si.tag == 1{
                 let l = si as! TxtLabel
                 l.removeBorder()
+                if v.tag == 1{
+                    let lbl = v as! TxtLabel
+                    selectedItem = lbl
+                    delegate?.tapFromAnotherView(view: .label(lbl))
+                    return
+                }
+                else{
+                    let sh = v as! Shape
+                    selectedItem = sh
+                    delegate?.tapFromAnotherView(view: .shape(sh))
+                    return
+                }
             }
             else{
                 let sh = si as! Shape

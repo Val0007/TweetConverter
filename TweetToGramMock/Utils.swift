@@ -166,6 +166,10 @@ enum CustomFonts:String,CaseIterable{
     case SmoochSans = "Smooch Sans"
     case Montserrat = "Montserrat"
     case Default = "SFUI-Regular"
+    case Raleway = "Raleway"
+    case Nunito = "Nunito"
+    case OpenSans = "Open Sans"
+    case SourceSansPro = "Source Sans Pro"
 }
 
 enum EditOptions{

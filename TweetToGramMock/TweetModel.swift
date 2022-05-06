@@ -52,15 +52,12 @@ class TweetModel{
         case badResponse
         case badURL
     }
-
-     let bearerToken = "AAAAAAAAAAAAAAAAAAAAAJJAUQEAAAAAItQI%2FX4BWHoXebF%2BmMLJL7NPBZI%3DmmahANiAtxD2swTbgCIuHOOZDml84CxrFdNw6v907vNd9EiEXj"
-        
         func fetchTweet(url: String, completion: @escaping (Result<ReturnedTweet, Error>) -> Void) {
             do {
                 var request = URLRequest(url: try createURL(url: url),
                                          timeoutInterval: Double.infinity)
                 
-                request.addValue("Bearer \(bearerToken)", forHTTPHeaderField: "Authorization")
+                request.addValue("Bearer \(Secret.key)", forHTTPHeaderField: "Authorization")
                 
                 request.httpMethod = "GET"
                 
