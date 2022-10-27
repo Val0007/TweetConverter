@@ -180,12 +180,14 @@ class Board: UIView {
     @objc func handleItemTap(_ sender:UITapGestureRecognizer){
         guard let v = sender.view else {return}
         if let si = selectedItem {
+            print("YES")
             if si.tag == 1{
                 let l = si as! TxtLabel
                 l.removeBorder()
                 if v.tag == 1{
                     let lbl = v as! TxtLabel
                     selectedItem = lbl
+                    print("label received")
                     delegate?.tapFromAnotherView(view: .label(lbl))
                     return
                 }
@@ -197,8 +199,21 @@ class Board: UIView {
                 }
             }
             else{
-                let sh = si as! Shape
-                sh.removeBorder()
+                let l = si as! Shape
+                l.removeBorder()
+                if v.tag == 1{
+                    let lbl = v as! TxtLabel
+                    selectedItem = lbl
+                    print("label received")
+                    delegate?.tapFromAnotherView(view: .label(lbl))
+                    return
+                }
+                else{
+                    let sh = v as! Shape
+                    selectedItem = sh
+                    delegate?.tapFromAnotherView(view: .shape(sh))
+                    return
+                }
             }
         }
         if v.tag == 1{

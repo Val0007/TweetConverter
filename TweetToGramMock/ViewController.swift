@@ -582,6 +582,7 @@ extension ViewController:UICollectionViewDataSource,UICollectionViewDelegate{
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCell", for: indexPath) as! sliderCell
                     let lbl = selectedItem as! TxtLabel
                     cell.changeValue(value: lbl.pointSize)
+                    cell.forRadius = false
                     cell.delegate = self
                     return cell
                 }
